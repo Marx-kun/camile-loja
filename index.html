@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <title>Camile Soares | Mostruário</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bijuterias, chocolates Cacau Show e produtos Natura com direto no seu WhatsApp.">
+  <meta name="description" content="Acessórios, Cacau Show, oBoticário, L'Occitane e Eudora – compre pelo WhatsApp.">
   <link rel="stylesheet" href="css/style.css">
-  <!-- ícone do WhatsApp flutuante -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
@@ -16,8 +15,6 @@
     <img src="img/camile.jpg" alt="Camile Soares" class="perfil">
     <h1>Camile Soares</h1>
     <p>Acessórios | Cacau Show | oBoticário | L'Occitane | Eudora</p>
-
-    <!-- FLEX-CONTAINER -->
     <div class="botoes-header">
       <a href="https://instagram.com/revendedora_camile" target="_blank" class="btn-ig">
         <i class="fab fa-instagram"></i> Instagram
@@ -28,69 +25,44 @@
   </div>
 </header>
 
-  <!-- NAVEGAÇÃO RÁPIDA -->
-  <nav class="categorias-nav">
-    <div class="container">
-      <a href="#bijuterias">Acessórios</a>
-      <a href="#cacau-show">Cacau Show</a>
-      <a href="#oboticario">oBoticário</a>
-      <a href="#loccitane">L'Occitane</a>
-      <a href="#eudora">Eudora</a>
-    </div>
-  </nav>
+<nav class="categorias-nav">
+  <div class="container">
+    <a href="#bijuterias">Acessórios</a>
+    <a href="#cacau-show">Cacau Show</a>
+    <a href="#oboticario">oBoticário</a>
+    <a href="#loccitane">L'Occitane</a>
+    <a href="#eudora">Eudora</a>
+  </div>
+</nav>
 
-  <!-- SEÇÃO BIJUTERIAS -->
-  <section id="bijuterias" class="secao">
-    <div class="container">
-      <h2>Acessórios</h2>
-      <div class="grade" id="grade-bijuterias"></div>
-    </div>
-  </section>
+<section id="bijuterias" class="secao">
+  <div class="container"><h2>Acessórios</h2><div class="grade" id="grade-bijuterias"></div></div>
+</section>
+<section id="cacau-show" class="secao">
+  <div class="container"><h2>Cacau Show</h2><div class="grade" id="grade-cacau"></div></div>
+</section>
+<section id="oboticario" class="secao">
+  <div class="container"><h2>oBoticário</h2><div class="grade" id="grade-oboticario"></div></div>
+</section>
+<section id="loccitane" class="secao">
+  <div class="container"><h2>L'Occitane</h2><div class="grade" id="grade-loccitane"></div></div>
+</section>
+<section id="eudora" class="secao">
+  <div class="container"><h2>Eudora</h2><div class="grade" id="grade-eudora"></div></div>
+</section>
 
-  <!-- SEÇÃO CACAU SHOW -->
-  <section id="cacau-show" class="secao">
-    <div class="container">
-      <h2>Cacau Show</h2>
-      <div class="grade" id="grade-cacau"></div>
-    </div>
-  </section>
+<footer>
+  <div class="container"><p>&copy; <span id="ano"></span> Camile Soares. Todos os direitos reservados.</p></div>
+</footer>
 
-  <!-- SEÇÃO OBOTICARIO -->
-  <section id="oboticario" class="secao">
-    <div class="container">
-      <h2>oBoticário</h2>
-      <div class="grade" id="grade-oboticario"></div>
-    </div>
-  </section>
+<a href="https://wa.me/5512982126783?text=Oi, Camile! Visitei seu mostruário e quero comprar." target="_blank" class="whats-fixo"><i class="fab fa-whatsapp"></i></a>
 
-  <!-- SEÇÃO L'Occitane -->
-  <section id="loccitane" class="secao">
-    <div class="container">
-      <h2>L'Occitane</h2>
-      <div class="grade" id="grade-loccitane"></div>
-    </div>
-  </section>
+<!-- CARRINHO FLUTUANTE -->
+<div id="carrinho-flutuante" onclick="enviaCarrinhoWhatsApp()">
+  <span id="contador-carrinho" style="display:none;">0</span>
+  <i class="fab fa-whatsapp"></i>
+</div>
 
-  <!-- SEÇÃO EUDORA -->
-  <section id="eudora" class="secao">
-    <div class="container">
-      <h2>Eudora</h2>
-      <div class="grade" id="grade-eudora"></div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>&copy; <span id="ano"></span> Camile Soares. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- WHATSAPP FIXO -->
-  <a href="https://wa.me/5512982126783?text=Oi, Camile! Visitei seu mostruário e quero comprar." target="_blank" class="whats-fixo">
-    <i class="fab fa-whatsapp"></i>
-  </a>
-
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
