@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin - Camile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <h1>Admin - Camile</h1>
+
+  <!-- LOGIN -->
+  <div id="login">
+    <input type="password" id="senha" placeholder="Senha admin">
+    <button onclick="entrar()">Entrar</button>
+  </div>
+
+  <!-- PAINEL -->
+  <div id="painel" class="hidden">
+    <h2>Adicionar / Editar Produto</h2>
+    <input type="hidden" id="idEdit">
+    <select id="categoria">
+      <option>bijuterias</option>
+      <option>cacau</option>
+      <option>oboticario</option>
+      <option>loccitane</option>
+      <option>eudora</option>
+    </select>
+    <input type="text" id="nome" placeholder="Nome do produto">
+    <input type="text" id="preco" placeholder="Preço (ex: 25.90)">
+    <select id="disponivel">
+      <option value="TRUE">Disponível</option>
+      <option value="FALSE">Indisponível</option>
+    </select>
+    <input type="url" id="img" placeholder="URL da imagem (Drive ou externa)" oninput="validaImagem()">
+    <input type="file" id="foto" accept="image/*">
+    <button type="button" onclick="uploadImg()">Enviar Imagem</button>
+    <button onclick="salva()" id="btnSalvar" disabled>Salvar</button>
+    <button onclick="limpaForm()">Cancelar</button>
+
+    <hr>
+    <h2>Produtos cadastrados</h2>
+    <div id="lista"></div>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
